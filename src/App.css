@@ -14,6 +14,9 @@
     box-shadow: 3px 3px 10px rgb(6,6,6);
     border-radius: 7px;
 }
+.s-container{
+    display: flex;
+}
 .movie-img {
     height: 180px;
     width: 150px;
@@ -37,6 +40,7 @@
     margin: 10px;
     padding: 10px;
     background-color: #333545;
+    
 }
 .container {
     border: 2px solid black;
@@ -121,12 +125,72 @@
     width: 30vw;
     height: 40vh;
     margin-top: 10px;
+    justify-self: center;
+    align-self: center;
 }
 
 @media screen and (max-width:1349px) {
     .movie-div {
         display: none;
     }
+    .element1{
+        width: 100%;
+        padding: 5px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .movie-name {
+        margin: 0px 30px 10px 0px;
+      }
     
+}
+
+@media screen and (max-width:1076px) {
+     .s-container{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+     }
+    
+     .bookingContainer{
+        margin-left: 5px;
+        width: 80vw;
+        
+     }
+     .noBooking{
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        text-wrap: nowrap;
+     }
+     .btn{
+        width: 80vw;
+     }
+     .btn-2{
+        width: 80vw;
+     }
+     .mainContainer{
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .img-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .container{
+        width: 80vw;
+     }
+     .container-movie{
+        width: 80vw;
+     }
+     .loaderImg{
+        margin-left: 50px;
+     }
+     .element{
+        margin-left: 20px;
+     }
 }
 

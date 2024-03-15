@@ -130,7 +130,7 @@ function App() {
         <div className="img-container">
              <img src={img} alt="logo" height="50px" width="150px"></img>
         </div>
-        <div style={{display:"flex"}}>
+        <div className="s-container">
         <div className="AppContainer">
           <div className="container-outer">
             <Movie images={images} data={data.movies} movieSelector={movieHandler} movieData={movieData.movie} />
@@ -143,7 +143,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="lbook">
           <Lastbooking data={fetched}/>
         <div className="btn-2" onClick={handleDelete}>
           <button className="submit-btn">
