@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+.img-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-movie{
+    border: 2px solid black;
+    width: 60vw;
+    padding: 10px;
+    margin: 10px;
+    font-family: sans-serif;
+    background-color: #eee;
+    box-shadow: 3px 3px 10px rgb(6,6,6);
+    border-radius: 7px;
+}
+.movie-img {
+    height: 180px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.element1 {
+  width: 140px;
+  padding: 10px 0px 10px 10px;
+  border-radius: 10px;
+  margin: 0px 5px;
+}
+.AppContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mainContainer {
+    margin: 10px;
+    padding: 10px;
+    background-color: #333545;
+}
+.container {
+    border: 2px solid black;
+    width: 40vw;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 10px;
+    background-color: #eee;
+    box-shadow: 3px 3px 10px rgb(6,6,6);
+    font-family: sans-serif;
+}
+.element {
+    font-family: sans-serif;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.submit-btn {
+   background-color: #f08e33;
+   color:rgb(0,0,0);
+   font-size: 15px;
+   font-weight: bold;
+   font-family: sans-serif;
+   padding: 15px;
+   height: 100%;
+   width: 30%;
+   border: 1px solid #eee;
+   border-radius: 5px;
+   box-shadow: 4px 4px 10px rgb(0,0,0);
+   text-shadow: none;
+}
+.submit-btn:hover {
+    cursor: pointer;
+    background: #f35a07;
+    color: #000;
+    border: 1px solid rgb(0,0,0);
+    border-radius: 15px;
+    text-shadow: none;
+    box-shadow: 5px 5px 10px rgb(6, 6, 6);
+}
+.btn-2 {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.loaderImg {
+    height: 200px;
+    width: 200px;
+    margin-left: 120px;
+    
+}
+.bookingContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    width: 27vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #eee;
+    font-family: sans-serif;
+    box-shadow: 5px 5px 10px rgb(6, 6, 6);
+}
+.noBooking{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    height: 40vh;
+    margin-top: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width:1349px) {
+    .movie-div {
+        display: none;
+    }
+    
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
